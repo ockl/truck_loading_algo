@@ -1,10 +1,10 @@
 package com.github.ockl.truck_loading_algo;
 
 public class Packet {
-	public Packet(String id, int size, String dischargeStation) {
+	public Packet(String id, int size, String station) {
 		this.id = id;
 		this.size = size;
-		this.dischargeStation = dischargeStation;
+		this.station = station;
 	}
 
 	/**
@@ -24,11 +24,11 @@ public class Packet {
 	/**
 	 * @return  Unique identifier of the discharge station where this packet needs to go
 	 */
-	public String getDischargeStationID() {
-		return dischargeStation;
+	public String getStationID() {
+		return station;
 	}
 
 	private final String id;
 	private final int size;
-	private final String dischargeStation;
+	private final String station;
 }

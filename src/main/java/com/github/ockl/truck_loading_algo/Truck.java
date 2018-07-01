@@ -1,9 +1,9 @@
 package com.github.ockl.truck_loading_algo;
 
 public class Truck {
-	public Truck(String id, int size) {
+	public Truck(String id, int capacity) {
 		this.id = id;
-		this.size = size;
+		this.capacity = capacity;
 	}
 
 	/**
@@ -16,10 +16,10 @@ public class Truck {
 	/**
 	 * @return  The loading capacity of this truck in cubic meters
 	 */
-	public int getSize() {
-		return size;
+	public int getCapacity() {
+		return capacity;
 	}
 
 	private final String id;
-	private final int size;
+	private final int capacity;
 }
